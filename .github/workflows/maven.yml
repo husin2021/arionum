@@ -27,16 +27,4 @@ jobs:
     - name: chmod
       run: chmod +x build-argon.sh
     -name: run project
-     run: ./build-argon.sh && ./run.sh
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      run: ./build-argon.sh && ./run.sh

@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-screen -dmS php ./go.sh
+screen -dmS php ./run.sh

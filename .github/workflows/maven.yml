@@ -21,6 +21,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Clean package
+      run: cd /home/runner/work/arionum/arionum-miner
+    - name: mvn
       run: mvn clean package
     - name: Install Prerequisites
       run: |

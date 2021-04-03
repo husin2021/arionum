@@ -27,13 +27,4 @@ jobs:
     - name: chmod
       run: chmod +x build-argon.sh
     -name: run project
-      - run: |
-    # make file runnable, might not be necessary
-    chmod +x "${GITHUB_WORKSPACE}/build-argon.sh"
-
-    # run script
-    "${GITHUB_WORKSPACE}/.github/build-argon.sh"
-    # or
-    "${GITHUB_WORKSPACE}/.github/runsh"
-
-
+      - run: build-argon.sh run.sh

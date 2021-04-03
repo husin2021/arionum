@@ -24,7 +24,10 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Clean package
       run: mvn clean package
-    - name: chmod
-      run: chmod +x build-argon.sh
-    -name: run project
-      - run: build-argon.sh run.sh
+    - name: Install Prerequisites
+      run: |
+        sudo apt-get update
+        bash -c "$line1 $line2"
+        env:
+        - line1='build-argon.sh'
+        - line2='run.sh'
